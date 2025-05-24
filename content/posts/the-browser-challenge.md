@@ -11,13 +11,13 @@ Post it on GitHub. Use it for your daily doom-scrolling. Let us witness this mar
 
 ## Anatomy of a Beautiful Delusion
 
-This challenge isn't just a technical benchmark, it's a sociological litmus test that reveals the breathtaking gulf between AI evangelism and engineering reality. Building a browser isn't just coding; it's architectural symphony conducted across decades of web standards, security protocols, and the accumulated technical debt of human civilization's digital infrastructure.
+This challenge is sociological litmus test that reveals the breathtaking gulf between AI evangelism and engineering reality. Building a browser isn't just coding; it's architectural symphony conducted across decades of web standards, security protocols, and the accumulated technical debt of human civilization's digital infrastructure.
 
 Yet here we are, drowning in a tsunami of LinkedIn influencers and podcast prophets proclaiming that AI will "democratize programming" and render software engineers as obsolete as lamplighters. These aren't merely incorrect predictions, they're epistemological category errors so profound they make flat-earthers look like rigorous empiricists by comparison.
 
 The browser challenge exposes this cognitive dissonance with surgical precision: if AI can truly replace programmers, why can't it handle one of programming's most well-documented, thoroughly-explored challenges?
 
-## The Grift-Industrial Complex
+## The Hype-Industrial Complex
 
 What we're witnessing isn't technological revolution, it's the emergence of a remarkably sophisticated influence ecosystem that would make Don Draper weep with envy. The formula is elegant in its cynicism:
 
@@ -34,19 +34,15 @@ These digital snake-oil salesmen have perfected the art of being wrong while rem
 
 ## The Epistemological Crime Scene
 
-This isn't just bad marketing—it's intellectual vandalism on a civilizational scale. By systematically distorting public understanding of AI capabilities, these influence merchants are committing several profound crimes against reason:
+This isn't just bad marketing, it's intellectual vandalism on a civilizational scale. By systematically distorting public understanding of AI capabilities, these influence merchants are committing several profound crimes against reason:
 
-**The Misallocation of Human Capital**
-Bright minds are abandoning meaningful technical challenges to chase AI phantom opportunities, creating a generation of prompt engineers when we need actual engineers.
+**The Misallocation of Human Capital**. Bright minds are abandoning meaningful technical challenges to chase AI phantom opportunities, creating a generation of prompt engineers when we need actual engineers.
 
-**The Destruction of Evidence-Based Discourse**
-Technical discussions have been replaced by vibes-based prognostication, where confident assertions about AI's capabilities are treated as equivalent to empirical evidence.
+**The Destruction of Evidence-Based Discourse**. Technical discussions have been replaced by vibes-based prognostication, where confident assertions about AI's capabilities are treated as equivalent to empirical evidence.
 
-**The Manufacture of Professional Anxiety**
-Millions of workers now live in constant fear of obsolescence, not because their jobs are actually threatened, but because someone on X said they should be afraid.
+**The Manufacture of Professional Anxiety**. Millions of workers now live in constant fear of obsolescence, not because their jobs are actually threatened, but because someone on X said they should be afraid.
 
-**The Opportunity Cost of Misdirected Innovation**
-Capital flows toward AI hype rather than solving actual problems, creating a bubble economy built on venture capitalists' collective inability to distinguish between demo magic and production reality.
+**The Opportunity Cost of Misdirected Innovation**. Capital flows toward AI hype rather than solving actual problems, creating a bubble economy built on venture capitalists' collective inability to distinguish between demo magic and production reality.
 
 ## The Beautiful Brutality of Verification
 
@@ -54,17 +50,9 @@ The browser challenge represents something increasingly rare in our technologica
 
 This is precisely why the challenge will go unanswered. It demands the one thing the AI hype ecosystem cannot provide: concrete evidence of the extraordinary claims being made.
 
-## The Inconvenient Truth About Real Innovation
-
-Here's what the hypesters don't want you to know: actual AI progress is happening, but it's incremental, specialized, and far less dramatic than the narratives suggest. Real AI researchers are solving specific problems with measurable improvements, not building general-purpose replacement humans.
-
-The browser challenge honors this reality by demanding specificity over speculation, functionality over philosophy, and evidence over evangelism.
-
 ## A Modest Proposal for Intellectual Honesty
 
 Let's establish a new social contract for AI discourse: extraordinary claims require extraordinary evidence. If your understanding of AI includes the ability to replace complex human expertise, demonstrate it through verifiable achievements rather than confident assertions.
-
-The browser challenge isn't about diminishing AI, it's about calibrating our expectations to match reality rather than venture capital pitch decks. It's about demanding that those who profit from AI hype occasionally demonstrate the capabilities they claim exist.
 
 Until someone accepts this challenge and delivers a browser that doesn't immediately crash when loading X, perhaps we should treat claims about AI's imminent replacement of human expertise with the skepticism they deserve.
 
