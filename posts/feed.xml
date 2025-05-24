@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>My Blog</title>
+	<subtitle>My blog site.</subtitle>
+	<link href="https://codingstream.org/posts/feed.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://codingstream.org/posts/"/>
+	<updated>2025-03-11T00:00:00+00:00</updated>
+	<id>https://codingstream.org/posts/feed.xml</id>
+	<entry xml:lang="en">
+		<title>Challenge to AI Grifters</title>
+		<published>2025-03-11T00:00:00+00:00</published>
+		<updated>2025-03-11T00:00:00+00:00</updated>
+		<link href="https://codingstream.org/posts/challenge-to-ai-grifters/" type="text/html"/>
+		<id>https://codingstream.org/posts/challenge-to-ai-grifters/</id>
+		<content type="html">&lt;h2 id=&quot;the-challenge&quot;&gt;The Challenge&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-challenge&quot; aria-label=&quot;Anchor link for: the-challenge&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;Formal Challenge: Demonstrate that generative AI can build a feature-complete web browser comparable to Chrome or Firefox, of sufficient quality to be published on GitHub and suitable for daily tasks.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-ai-hype-mirage&quot;&gt;The AI Hype Mirage&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-ai-hype-mirage&quot; aria-label=&quot;Anchor link for: the-ai-hype-mirage&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;This challenge exposes a fundamental truth about today’s AI landscape. Despite breathless claims about AI’s capabilities, certain achievements remain firmly out of reach. Building a complex, feature-complete web browser requires deep systems knowledge, careful engineering, and thousands of person-hours—precisely the type of work current AI systems cannot accomplish.&lt;&#x2F;p&gt;
+&lt;p&gt;Yet we’re bombarded with claims that AI is “just about” to replace software engineers, revolutionize programming, or build complex systems autonomously. These predictions aren’t merely incorrect, but part of a deliberate misinformation ecosystem.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-grift-economy&quot;&gt;The Grift Economy&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-grift-economy&quot; aria-label=&quot;Anchor link for: the-grift-economy&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;The AI hype cycle has created perfect conditions for a new class of influence merchants. These social media personalities build followings through a calculated formula:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make extreme claims about AI capabilities and dangers&lt;&#x2F;li&gt;
+&lt;li&gt;Pile onto trending AI narratives without verification&lt;&#x2F;li&gt;
+&lt;li&gt;Create artificial urgency (“AI will replace X by next year!”)&lt;&#x2F;li&gt;
+&lt;li&gt;Monetize this manufactured influence through native advertising&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;These nihilist doom merchants sell fear while simultaneously promoting venture-backed ChatGPT wrapper products. The contradiction is rarely noticed: how can AI be both civilization-ending &lt;em&gt;and&lt;&#x2F;em&gt; merely require their friend’s $25&#x2F;month SaaS tool to harness?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-this-matters&quot;&gt;Why This Matters&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-this-matters&quot; aria-label=&quot;Anchor link for: why-this-matters&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;This isn’t harmless marketing. By distorting public understanding of AI capabilities, these hypesters:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mislead investors, directing capital away from meaningful innovation&lt;&#x2F;li&gt;
+&lt;li&gt;Create unrealistic expectations that damage legitimate AI research&lt;&#x2F;li&gt;
+&lt;li&gt;Foster anxiety among professionals about imminent obsolescence&lt;&#x2F;li&gt;
+&lt;li&gt;Divert attention from real AI challenges and opportunities&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The browser challenge represents a clear, verifiable test: if your conception of AI includes the ability to produce complex, engineering-intensive software systems, demonstrate it or recalibrate your claims.&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s demand evidence-based discussion about AI’s capabilities rather than accepting the narratives of those whose income depends on perpetuating hype.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
