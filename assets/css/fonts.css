@@ -1,0 +1,118 @@
+/* ET Book - Edward Tufte's font */
+@font-face {
+    font-family: 'ET Book';
+    src: url('https://edwardtufte.github.io/et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ET Book';
+    src: url('https://edwardtufte.github.io/et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ET Book';
+    src: url('https://edwardtufte.github.io/et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ET Book';
+    src: url('https://edwardtufte.github.io/et-book/et-book/et-book-semi-bold-old-style-figures/et-book-semi-bold-old-style-figures.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Add WOFF2 versions for better performance when available */
+@font-face {
+    font-family: 'ET Book';
+    src: url('https://edwardtufte.github.io/et-book/et-book-ligatures-enabled/et-book-roman-line-figures.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ET Book';
+    src: url('https://edwardtufte.github.io/et-book/et-book-ligatures-enabled/et-book-display-italic-old-style-figures.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ET Book';
+    src: url('https://edwardtufte.github.io/et-book/et-book-ligatures-enabled/et-book-bold-line-figures.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ET Book';
+    src: url('https://edwardtufte.github.io/et-book/et-book-ligatures-enabled/et-book-semi-bold-old-style-figures.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Fira Code for code blocks with ligatures */
+@font-face {
+    font-family: 'Fira Code';
+    src: url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/woff2/FiraCode-Light.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/woff/FiraCode-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/woff2/FiraCode-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/woff/FiraCode-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/woff2/FiraCode-Medium.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/woff/FiraCode-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/woff2/FiraCode-SemiBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/woff/FiraCode-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/woff2/FiraCode-Bold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/woff/FiraCode-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Font variables */
+:root {
+    --font-serif: 'ET Book', Georgia, serif;
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'Fira Code', ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
+}

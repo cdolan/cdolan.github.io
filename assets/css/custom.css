@@ -1,0 +1,376 @@
+/* Tufte-inspired styling */
+
+/* Typography refinements */
+body {
+  font-feature-settings: "kern", "liga", "calt", "pnum", "tnum", "onum", "lnum", "dlig";
+  text-rendering: optimizeLegibility;
+  hyphens: auto;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+/* Tufte-style sidenotes and margin notes */
+.sidenote, .marginnote {
+  float: right;
+  clear: right;
+  margin-right: -60%;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.82em;
+  line-height: 1.4;
+  vertical-align: baseline;
+  position: relative;
+  opacity: 0.8;
+}
+
+.sidenote-number {
+  counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after, .sidenote:before {
+  content: counter(sidenote-counter);
+  font-size: 0.7em;
+  top: -0.5em;
+  position: relative;
+}
+
+.sidenote:before {
+  content: counter(sidenote-counter) ". ";
+  position: absolute;
+  left: -1.4em;
+}
+
+.marginnote:before {
+  content: "※ ";
+  position: absolute;
+  left: -1.4em;
+}
+
+/* Blockquotes */
+blockquote {
+  font-style: italic;
+  border-left: none;
+  margin: 2.5em 0;
+  padding: 0 2em;
+  position: relative;
+}
+
+blockquote:before {
+  content: """;
+  position: absolute;
+  left: 0;
+  top: -0.15em;
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1.4em 0;
+  font-size: 0.9em;
+}
+
+th {
+  border-bottom: 1px solid;
+  font-weight: normal;
+  padding: 0.4em 0.8em;
+  text-align: left;
+}
+
+td {
+  padding: 0.4em 0.8em;
+}
+
+/* Links */
+a:link, a:visited {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+a:hover, a:active {
+  border-bottom: 2px solid;
+}
+
+/* Figures and captions */
+figure {
+  margin: 2em 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+/* Enhanced Code Styling with Fira Code + Ligatures */
+code, pre {
+  font-family: var(--font-mono);
+  font-feature-settings: "calt" 1, "liga" 1, "zero" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1;
+  -webkit-font-feature-settings: "calt" 1, "liga" 1, "zero" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1;
+  text-rendering: optimizeLegibility;
+}
+
+code {
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1.2em 1.4em;
+  margin: 1.5em 0;
+  border-radius: 6px;
+  overflow: auto;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.9em;
+  line-height: 1.6;
+  white-space: pre;
+  display: block;
+}
+
+/* Add a subtle highlight to code lines on hover */
+pre code:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Syntax highlighting enhancements */
+.highlight {
+  margin: 1.5em 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.highlight pre {
+  margin: 0;
+  padding: 1.2em 1.4em;
+}
+
+/* Code copy button styling */
+.copy-code-button {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0.3em 0.6em;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.highlight:hover .copy-code-button {
+  opacity: 1;
+}
+
+/* Custom styling for common code elements */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6c7a89;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #656565;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+  color: #087;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #8f8f8f;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a;
+}
+
+.token.function {
+  color: #b71c1c;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+/* Dark mode adjustments for code blocks */
+@media (prefers-color-scheme: dark) {
+  code {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  pre {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  pre code:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
+  .copy-code-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Dark mode syntax highlighting */
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: #8e9eaf;
+  }
+  
+  .token.punctuation {
+    color: #a9a9a9;
+  }
+  
+  .token.property,
+  .token.tag,
+  .token.boolean,
+  .token.number,
+  .token.constant,
+  .token.symbol {
+    color: #f78c6c;
+  }
+  
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin {
+    color: #89ddff;
+  }
+  
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+    color: #c0c0c0;
+  }
+  
+  .token.atrule,
+  .token.attr-value,
+  .token.keyword {
+    color: #82aaff;
+  }
+  
+  .token.function {
+    color: #e57373;
+  }
+  
+  .token.regex,
+  .token.important,
+  .token.variable {
+    color: #ffcb6b;
+  }
+}
+
+/* Responsive adjustments for sidenotes */
+@media (max-width: 1200px) {
+  .sidenote, .marginnote {
+    margin-right: -50%;
+    width: 45%;
+  }
+}
+
+@media (max-width: 960px) {
+  .sidenote, .marginnote {
+    float: none;
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    background: rgba(0, 0, 0, 0.03);
+    width: auto;
+  }
+  
+  .sidenote:before {
+    position: relative;
+    left: 0;
+    margin-right: 0.5em;
+  }
+  
+  .marginnote:before {
+    position: relative;
+    left: 0;
+    margin-right: 0.5em;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    font-size: 11pt;
+  }
+  
+  .sidenote, .marginnote {
+    float: none;
+    display: block;
+    margin: 1em 0;
+    font-size: 9pt;
+    border-top: 1px solid #ccc;
+    padding-top: 0.5em;
+    width: auto;
+  }
+  
+  pre, code {
+    font-size: 9pt;
+    background: none;
+    border: 1px solid #ddd;
+  }
+}

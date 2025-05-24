@@ -1,0 +1,85 @@
+baseURL = 'https://codingstream.org/'
+languageCode = 'en-us'
+title = 'codingstream'
+theme = 'typo'
+
+# Google analytics code
+# googleAnalytics = "G-xxxxxxxxx"
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Meta description
+description = "A Tech Blog"
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'base16-mocha'
+hideHeader = true
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Hi!'
+homeIntroContent = """
+I am a Software Engineer with a strong foundation in computer science and a passion for solving complex problems.
+I am interested in a range of topics, including algorithms, distributed systems, databases, and information retrieval.
+"""
+
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = false
+listDateFormat = 'Jan 2, 2006'
+
+showFooter = true
+footerContent = "© 2025 by Christopher Dolan is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+
+# Breadcrumbs
+[params.breadcrumbs]
+enabled = true
+showCurrentPage = true
+home = "Home"
+
+# Social icons
+[[params.social]]
+name = "github"
+url = "https://github.com/codingstream"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/christopher-d-89751122/"
+
+# [[params.social]]
+# name = "medium"
+# url = "https://medium.com/@user"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+# [[params.menu]]
+# name = "about"
+# url = "/about"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
