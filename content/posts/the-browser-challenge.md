@@ -21,14 +21,11 @@ The browser challenge exposes this cognitive dissonance with surgical precision:
 
 What we're witnessing isn't technological revolution, it's the emergence of a remarkably sophisticated influence ecosystem that would make Don Draper weep with envy. The formula is elegant in its cynicism:
 
-**Step 1: Manufacture Apocalyptic Urgency**
-Saturate every sentence with totemic phrases like 'exponential growth' and 'artificial general intelligence'—not as descriptive language, but as membership badges in an exclusive club of the technologically enlightened. The subtext is always the same: join our cargo cult of disruption, or remain forever among the digital peasantry who still think websites need to actually work.
+**Step 1: Manufacture Apocalyptic Urgency**. Saturate every sentence with totemic phrases like 'exponential growth' and 'artificial general intelligence'—not as descriptive language, but as membership badges in an exclusive club of the technologically enlightened. The subtext is always the same: join our cargo cult of disruption, or remain forever among the digital peasantry who still think websites need to actually work.
 
-**Step 2: Embrace Contradictory Narratives Simultaneously**
-AI is simultaneously powerful enough to end civilization and convenient enough to be tamed by your friend's ChatGPT wrapper startup for $20/mo. Cognitive dissonance isn't a bug, it's a feature that keeps the audience constantly off-balance and perpetually needy for the next revelation.
+**Step 2: Embrace Contradictory Narratives Simultaneously**. AI is simultaneously powerful enough to end civilization and convenient enough to be tamed by your friend's ChatGPT wrapper startup for $20/mo. Cognitive dissonance isn't a bug, it's a feature that keeps the audience constantly off-balance and perpetually needy for the next revelation.
 
-**Step 3: Monetize the Manufactured Panic**
-Convert followers into customers through carefully orchestrated native advertising masquerading as thought leadership. Sell courses on "AI-proofing your career" while simultaneously hawking the very tools supposedly making careers obsolete.
+**Step 3: Monetize the Manufactured Panic**. Convert followers into customers through carefully orchestrated native advertising masquerading as thought leadership. Sell courses on "AI-proofing your career" while simultaneously hawking the very tools supposedly making careers obsolete.
 
 These digital snake-oil salesmen have perfected the art of being wrong while remaining profitable. They're not predicting the future, they're manufacturing a present where their expertise remains relevant and their products remain necessary.
 
