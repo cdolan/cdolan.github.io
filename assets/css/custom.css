@@ -1,376 +1,456 @@
-/* Tufte-inspired styling */
+/* Tufte CSS - Based on Edward Tufte's design principles */
 
-/* Typography refinements */
+/* ET Book font-face declarations */
+@font-face {
+    font-family: "et-book";
+    src: url("/fonts/et-book/et-book-roman-line-figures.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book";
+    src: url("/fonts/et-book/et-book-display-italic-old-style-figures.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book";
+    src: url("/fonts/et-book/et-book-bold-line-figures.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book";
+    src: url("/fonts/et-book/et-book-semi-bold-old-style-figures.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Override theme variables to use ET Book */
+:root {
+    --font-body: "et-book", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+/* Core typography */
+html {
+    font-size: 15px;
+}
+
 body {
-  font-feature-settings: "kern", "liga", "calt", "pnum", "tnum", "onum", "lnum", "dlig";
-  text-rendering: optimizeLegibility;
-  hyphens: auto;
+    font-family: var(--font-body);
+    background-color: #fffff8;
+    color: #111;
+    counter-reset: sidenote-counter;
 }
 
-h1, h2, h3 {
-  font-weight: 400;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
+/* Headings */
+h1 {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
 }
 
-/* Tufte-style sidenotes and margin notes */
-.sidenote, .marginnote {
-  float: right;
-  clear: right;
-  margin-right: -60%;
-  width: 50%;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 0.82em;
-  line-height: 1.4;
-  vertical-align: baseline;
-  position: relative;
-  opacity: 0.8;
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    line-height: 1;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* Text elements */
+p, 
+ol, 
+ul {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline;
+}
+
+/* Lists */
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+/* Links */
+a:link, 
+a:visited {
+    color: inherit;
+}
+
+a:link, 
+a:visited, 
+a:hover {
+    text-decoration: none;
+}
+
+a:link::after, 
+a:visited::after {
+    content: "↗";
+    color: #aaa;
+    font-size: 0.7em;
+    margin-left: 0.1em;
+    vertical-align: super;
+}
+
+/* Remove the arrow for internal links or anchors */
+a[href^="#"]::after,
+a[href^="/"]::after {
+    content: "";
+}
+
+/* Figures */
+img {
+    max-width: 100%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear: both;
+}
+
+/* Sidenotes and margin notes */
+.sidenote,
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
 }
 
 .sidenote-number {
-  counter-increment: sidenote-counter;
+    counter-increment: sidenote-counter;
 }
 
-.sidenote-number:after, .sidenote:before {
-  content: counter(sidenote-counter);
-  font-size: 0.7em;
-  top: -0.5em;
-  position: relative;
+.sidenote-number:after,
+.sidenote:before {
+    font-family: et-book;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
 }
 
 .sidenote:before {
-  content: counter(sidenote-counter) ". ";
-  position: absolute;
-  left: -1.4em;
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
 }
 
-.marginnote:before {
-  content: "※ ";
-  position: absolute;
-  left: -1.4em;
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+.sans {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+code, pre > code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%;
+}
+
+.sans > code {
+    font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+    font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem;
+}
+
+pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+pre.fullwidth > code {
+    width: 90%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear: both;
+}
+
+span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
 }
 
 /* Blockquotes */
 blockquote {
-  font-style: italic;
-  border-left: none;
-  margin: 2.5em 0;
-  padding: 0 2em;
-  position: relative;
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+    padding: 0;
+    width: 55%;
 }
 
-blockquote:before {
-  content: """;
-  position: absolute;
-  left: 0;
-  top: -0.15em;
-  font-size: 3em;
-  color: rgba(0, 0, 0, 0.3);
+blockquote p {
+    width: 55%;
+    margin-right: 40px;
+}
+
+blockquote footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+section > p,
+section > footer,
+section > table {
+    width: 55%;
+}
+
+section > dl,
+section > ol,
+section > ul {
+    width: 50%;
+    -webkit-padding-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+figure {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 55%;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 3em 0;
+}
+
+figcaption {
+    float: right;
+    clear: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+    margin-right: 24%;
 }
 
 /* Tables */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin: 1.4em 0;
-  font-size: 0.9em;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    font-size: 1.1rem;
 }
 
 th {
-  border-bottom: 1px solid;
-  font-weight: normal;
-  padding: 0.4em 0.8em;
-  text-align: left;
+    border-bottom: 1px solid #111;
+    font-weight: 400;
+    padding: 0.65ex 0.5em 0.4ex 0.5em;
 }
 
 td {
-  padding: 0.4em 0.8em;
+    padding: 0.65ex 0.5em 0.4ex 0.5em;
 }
 
-/* Links */
-a:link, a:visited {
-  text-decoration: none;
-  border-bottom: 1px solid;
+thead th {
+    padding: 0.65ex 0.5em 0.4ex 0.5em;
+    border-bottom: 1px solid #111;
 }
 
-a:hover, a:active {
-  border-bottom: 2px solid;
+/* Responsive design */
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+    }
 }
 
-/* Figures and captions */
-figure {
-  margin: 2em 0;
-  text-align: center;
-}
-
-figcaption {
-  font-size: 0.8em;
-  font-style: italic;
-  text-align: center;
-  margin-top: 0.5em;
-}
-
-/* Enhanced Code Styling with Fira Code + Ligatures */
-code, pre {
-  font-family: var(--font-mono);
-  font-feature-settings: "calt" 1, "liga" 1, "zero" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1;
-  -webkit-font-feature-settings: "calt" 1, "liga" 1, "zero" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1;
-  text-rendering: optimizeLegibility;
-}
-
-code {
-  font-size: 0.9em;
-  background: rgba(0, 0, 0, 0.05);
-  padding: 0.1em 0.4em;
-  border-radius: 3px;
-  vertical-align: middle;
-}
-
-pre {
-  background: rgba(0, 0, 0, 0.03);
-  padding: 1.2em 1.4em;
-  margin: 1.5em 0;
-  border-radius: 6px;
-  overflow: auto;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-}
-
-pre code {
-  background: none;
-  padding: 0;
-  font-size: 0.9em;
-  line-height: 1.6;
-  white-space: pre;
-  display: block;
-}
-
-/* Add a subtle highlight to code lines on hover */
-pre code:hover {
-  background: rgba(0, 0, 0, 0.02);
-}
-
-/* Syntax highlighting enhancements */
-.highlight {
-  margin: 1.5em 0;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.highlight pre {
-  margin: 0;
-  padding: 1.2em 1.4em;
-}
-
-/* Code copy button styling */
-.copy-code-button {
-  position: absolute;
-  top: 0.5em;
-  right: 0.5em;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  padding: 0.3em 0.6em;
-  font-size: 0.8em;
-  cursor: pointer;
-}
-
-.highlight:hover .copy-code-button {
-  opacity: 1;
-}
-
-/* Custom styling for common code elements */
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #6c7a89;
-  font-style: italic;
-}
-
-.token.punctuation {
-  color: #656565;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol {
-  color: #905;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin {
-  color: #087;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-  color: #8f8f8f;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-  color: #07a;
-}
-
-.token.function {
-  color: #b71c1c;
-}
-
-.token.regex,
-.token.important,
-.token.variable {
-  color: #e90;
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-/* Dark mode adjustments for code blocks */
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
-  code {
-    background: rgba(255, 255, 255, 0.1);
-  }
-  
-  pre {
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
-  }
-  
-  pre code:hover {
-    background: rgba(255, 255, 255, 0.03);
-  }
-  
-  .copy-code-button {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.2);
-  }
-  
-  /* Dark mode syntax highlighting */
-  .token.comment,
-  .token.prolog,
-  .token.doctype,
-  .token.cdata {
-    color: #8e9eaf;
-  }
-  
-  .token.punctuation {
-    color: #a9a9a9;
-  }
-  
-  .token.property,
-  .token.tag,
-  .token.boolean,
-  .token.number,
-  .token.constant,
-  .token.symbol {
-    color: #f78c6c;
-  }
-  
-  .token.selector,
-  .token.attr-name,
-  .token.string,
-  .token.char,
-  .token.builtin {
-    color: #89ddff;
-  }
-  
-  .token.operator,
-  .token.entity,
-  .token.url,
-  .language-css .token.string,
-  .style .token.string {
-    color: #c0c0c0;
-  }
-  
-  .token.atrule,
-  .token.attr-value,
-  .token.keyword {
-    color: #82aaff;
-  }
-  
-  .token.function {
-    color: #e57373;
-  }
-  
-  .token.regex,
-  .token.important,
-  .token.variable {
-    color: #ffcb6b;
-  }
-}
+    body {
+        background-color: #151515;
+        color: #ddd;
+    }
 
-/* Responsive adjustments for sidenotes */
-@media (max-width: 1200px) {
-  .sidenote, .marginnote {
-    margin-right: -50%;
-    width: 45%;
-  }
-}
+    hr {
+        border-top: 1px solid #666;
+    }
 
-@media (max-width: 960px) {
-  .sidenote, .marginnote {
-    float: none;
-    display: block;
-    margin: 1em 0;
-    padding: 0.5em 1em;
-    background: rgba(0, 0, 0, 0.03);
-    width: auto;
-  }
-  
-  .sidenote:before {
-    position: relative;
-    left: 0;
-    margin-right: 0.5em;
-  }
-  
-  .marginnote:before {
-    position: relative;
-    left: 0;
-    margin-right: 0.5em;
-  }
-}
+    table {
+        border-top: 2px solid #ddd;
+        border-bottom: 2px solid #ddd;
+    }
 
-/* Print styles */
-@media print {
-  body {
-    font-size: 11pt;
-  }
-  
-  .sidenote, .marginnote {
-    float: none;
-    display: block;
-    margin: 1em 0;
-    font-size: 9pt;
-    border-top: 1px solid #ccc;
-    padding-top: 0.5em;
-    width: auto;
-  }
-  
-  pre, code {
-    font-size: 9pt;
-    background: none;
-    border: 1px solid #ddd;
-  }
+    th,
+    thead th {
+        border-bottom: 1px solid #ddd;
+    }
+
+    a:link::after, 
+    a:visited::after {
+        color: #666;
+    }
 }

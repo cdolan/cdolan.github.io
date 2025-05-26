@@ -13,7 +13,7 @@ Post it on GitHub. Use it for your daily doom-scrolling. Let us witness this mar
 
 This challenge is sociological litmus test that reveals the breathtaking gulf between AI evangelism and engineering reality. Building a browser isn't just coding; it's architectural symphony conducted across decades of web standards, security protocols, and the accumulated technical debt of human civilization's digital infrastructure.
 
-Yet here we are, drowning in a tsunami of LinkedIn influencers and podcast prophets proclaiming that AI will "democratize programming" and render software engineers as obsolete as lamplighters. These aren't merely incorrect predictions, they're epistemological category errors so profound they make flat-earthers look like rigorous empiricists by comparison.
+Yet here we are, drowning in a tsunami of LinkedIn influencers and podcast prophets proclaiming that AI will "democratize programming" and render software engineers as obsolete as lamplighters. These aren't incorrect predictions, they're epistemological category errors so profound they make flat-earthers look like rigorous empiricists by comparison.
 
 The browser challenge exposes this cognitive dissonance with surgical precision: if AI can truly replace programmers, why can't it handle one of programming's most well-documented, thoroughly-explored challenges?
 
@@ -31,7 +31,7 @@ These digital snake-oil salesmen have perfected the art of being wrong while rem
 
 ## The Epistemological Crime Scene
 
-This isn't just bad marketing, it's intellectual vandalism on a civilizational scale. By systematically distorting public understanding of AI capabilities, these influence merchants are committing several profound crimes against reason:
+By systematically distorting public understanding of AI capabilities, these influence merchants are committing several profound crimes against reason:
 
 **The Misallocation of Human Capital**. Bright minds are abandoning meaningful technical challenges to chase AI phantom opportunities, creating a generation of prompt engineers when we need actual engineers.
 
