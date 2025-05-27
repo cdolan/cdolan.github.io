@@ -15,7 +15,7 @@ description = "A Tech Blog"
 
 # Appearance settings
 theme = 'auto'
-colorPalette = 'base16-mocha'
+colorPalette = 'eink'
 hideHeader = true
 
 # Intro on main page, content is markdown
@@ -35,7 +35,7 @@ listSummaries = false
 listDateFormat = 'Jan 2, 2006'
 
 showFooter = true
-footerContent = "© 2025 by Christopher Dolan is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+footerContent = "© 2025 Christopher Dolan. Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
 
 
 
