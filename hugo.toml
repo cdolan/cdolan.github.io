@@ -1,0 +1,40 @@
+baseURL = 'https://codingstream.org/'
+languageCode = 'en-us'
+title = 'codingstream'
+theme = "hugo-blog-awesome"
+
+[params]
+goToTop = true
+
+[params.author]
+name = "Christopher Dolan"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:chris@codingstream.org"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/christopher-d-89751122/"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/cdolan"
+
+[[params.socialIcons]]
+name = "x"
+url = "https://x.com/codingstream"
+
+[[params.socialIcons]]
+name = "RSS"
+url = "/index.xml"
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+name = "Archive"
+url = "/posts/"
+weight = 20
