@@ -5,6 +5,7 @@ theme = "hugo-blog-awesome"
 
 [params]
 goToTop = true
+dateFormat = "2006-01-02"
 
 [params.author]
 name = "Christopher Dolan"

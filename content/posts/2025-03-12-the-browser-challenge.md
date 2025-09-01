@@ -60,7 +60,7 @@ This is precisely why the challenge will go unanswered. It demands the one thing
 
 ## A Modest Proposal for Intellectual Honesty
 
-Let's establish a new social contract for AI discourse: _extraordinary claims require extraordinary evidence._ If your understanding of AI includes the ability to replace complex human expertise, demonstrate it through verifiable achievements rather than confident assertions.
+Let's establish a new social contract for AI discourse: **extraordinary claims require extraordinary evidence.** If your understanding of AI includes the ability to replace complex human expertise, demonstrate it through verifiable achievements rather than confident assertions.
 
 Until someone accepts this challenge and delivers a browser that doesn't immediately crash when loading reddit, perhaps we should treat claims about AI's imminent replacement of human expertise with the skepticism they deserve.
 
