@@ -1,8 +1,6 @@
 ---
 title: Ruby’s Potential in the LLM Era
 date: 2025-09-01
-draft: false
-math: false
 ---
 When working with LLM-generated code, one truth stands out: **you must read every line**. If you’re investing time to review code, wouldn’t you prefer it to read like poetry rather than a sprawling novel?
 

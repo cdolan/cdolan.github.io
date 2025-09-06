@@ -1,0 +1,9 @@
+:root {
+    --font-family-base: "Newsreader";
+    --font-size-base: 1em;
+    --content-max-width: 50em;
+}
+
+.katex {
+    font-size: 1em;
+}
