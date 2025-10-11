@@ -12,3 +12,6 @@ colorScheme = 'system'
 name = "Christopher Dolan"
 email = "chris@codingstream.org"
 twitter = "@codingstream"
+
+[markup.goldmark.renderer]
+unsafe = true
