@@ -1,17 +1,10 @@
 baseURL = 'https://codingstream.org/'
 languageCode = 'en-us'
 title = 'codingstream'
-theme = "dario"
-copyright = "© 2025 Christopher Dolan."
+theme = "ritzy"
 
 [params]
+author = "Christopher Dolan"
 description = "random thoughts"
+
 colorScheme = 'system'
-
-[params.author]
-name = "Christopher Dolan"
-email = "chris@codingstream.org"
-twitter = "@codingstream"
-
-[markup.goldmark.renderer]
-unsafe = true

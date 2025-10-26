@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why Rust Couldn’t Tame Linux
+description: Memory safety meets institutional power
 date: 2024-08-29 12:00:00 -0500
 categories: rust linux
 ---

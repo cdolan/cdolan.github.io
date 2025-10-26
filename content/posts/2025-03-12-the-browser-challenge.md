@@ -1,5 +1,6 @@
 ---
 title: The Browser Challenge
+description: If AI can replace engineers, why can't it render CSS?
 date: 2025-03-12
 ---
 ## The Gauntlet, Thrown

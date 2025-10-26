@@ -1,5 +1,6 @@
 ---
-title: "The Gem Cooperative: Mirror Without Substance"
+title: "The Gem Cooperative"
+description: "Mirror without substance"
 date: 2025-10-11
 ---
 

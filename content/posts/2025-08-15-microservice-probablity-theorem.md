@@ -1,5 +1,6 @@
 ---
 title: Microservice Probablity Theorem
+description: Confidence in distributed systems varies inversely with understanding them
 date: 2025-08-15
 ---
 Let
