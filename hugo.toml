@@ -8,3 +8,7 @@ author = "Christopher Dolan"
 description = "random thoughts"
 
 colorScheme = 'system'
+
+[markup.highlight]
+style = 'monochrome'
+noClasses = false
